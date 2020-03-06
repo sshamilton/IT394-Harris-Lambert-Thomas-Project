@@ -1,6 +1,6 @@
 # IT394-Harris-Lambert-Thomas-Project
 
-##Overview
+## Overview
 
 **Problem Statement:**
 Currently, all room inspection in the Corps of Cadets is tracked by handwritten notes written on a printed inspection sheet in that specific room.
