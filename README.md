@@ -1,6 +1,6 @@
 # IT394-Harris-Lambert-Thomas-Project
 
-##Admin Info:
+## Admin Info:
 
 **Group Name:**
 Merzi Buddies
