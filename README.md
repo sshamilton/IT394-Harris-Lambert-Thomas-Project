@@ -1,14 +1,2 @@
-# IT394-Harris-Lambert-Thomas-Project
-
-## Admin Info:
-
-**Group Name:**
-Merzi Buddies
-
-**Members:**
-* Donte Harris
-* Nate Lambert 
-* Ian Thomas 
-
-**[Problem Statement](problem.md)**
-
+# classproject2
+IT394 In Class Project 2
