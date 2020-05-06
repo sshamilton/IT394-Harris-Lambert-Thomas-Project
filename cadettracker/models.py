@@ -1,13 +1,19 @@
 from django.db import models
 
 
-class Buildings(models.Model):
+class Building(models.Model):
     BuildingName = models.CharField(max_length=20)
+
+    def name(self):
+        return (self.BuildingName)
+
+    def __str__(self):
+        return (self.BuildingName)
 
 
 class Location(models.Model):
 #    BLDGNum = models.CharField(max_length=4)
-    BLDGName = models.ForeignKey(Buildings, on_delete=models.CASCADE)
+    BLDGName = models.ForeignKey(Building, on_delete=models.CASCADE)
     Floor = models.IntegerField()
     RoomNum = models.IntegerField()
     RoomDescription = models.CharField(max_length=50)
@@ -16,7 +22,7 @@ class Location(models.Model):
         return (self.BLDGName + "is the location")
 
     def __str__(self):
-        return (self.BLDGName + "is the location")
+        return (str(self.BLDGName) + " " + str(self.RoomNum))
 
 class Supply(models.Model):
     item = models.CharField(max_length=50)

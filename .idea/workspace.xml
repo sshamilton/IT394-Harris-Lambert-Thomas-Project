@@ -58,7 +58,7 @@
       <updated>1588543752805</updated>
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
-      <workItem from="1588615975097" duration="10139000" />
+      <workItem from="1588615975097" duration="11063000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588734401792</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Buildings Table to make the location organization more understandable">
+      <created>1588735919035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588735919035</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,21 +113,22 @@
     <MESSAGE value="adding to models. Also Changed names in models.py to remove underscores." />
     <MESSAGE value="Adding to models." />
     <MESSAGE value="Testing admin site changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing admin site changes" />
+    <MESSAGE value="Added Buildings Table to make the location organization more understandable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Buildings Table to make the location organization more understandable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1031" y="183" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1588549199894" />
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588735671205">
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588736389486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588735671205" />
-    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588734401233">
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588736389486" />
+    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588735918517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588734401233" />
+    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588735918517" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
