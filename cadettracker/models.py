@@ -6,11 +6,11 @@ class Location(models.Model):
     RoomNum = models.IntegerField()
     RoomDescription = models.CharField(max_length=50)
 
-    def name(self):
-        return (self.Location_ID + "is the location")
+    #def name(self):
+    #    return (self.Location_ID + "is the location")
 
-    def __str__(self):
-        return (self.Location_ID + "is the location")
+    #def __str__(self):
+    #    return (self.Location_ID + "is the location")
 
 class Supply(models.Model):
     item = models.CharField(max_length=50)
@@ -26,9 +26,9 @@ class Personnel(models.Model):
 
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
-    SupplyOfficer = models.ForeignKey(Personnel, related_name = "companies", on_delete=models.CASCADE ) #Alpha, Bravo, Charlie etc.
+    SupplyOfficer = models.ForeignKey(Personnel, related_name = "companies", blank = True, on_delete=models.CASCADE ) #Alpha, Bravo, Charlie etc.
     regiment = models.IntegerField() #1,2,3,4
-    SupplyNCO = models.ForeignKey(Personnel, related_name = "Scompanies", on_delete=models.CASCADE ) #Go Buffs!  Go Greeks, etc.
+    SupplyNCO = models.ForeignKey(Personnel, related_name = "Scompanies", blank=True , on_delete=models.CASCADE ) #Go Buffs!  Go Greeks, etc.
     LocationID = models.ForeignKey(Location, on_delete=models.CASCADE) #Buffalos, Greeks.
 
     def __str__(self):
