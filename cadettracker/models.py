@@ -51,9 +51,9 @@ class RegHasSupply(models.Model):
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
 
-'''
+
 class Regiment(models.Model):
-    Reg_ID = models.IntegerField()
-    Regiment_Supply_NCO = models.ForeignKey(Personnel, on_delete=models.CASCADE)
-    Regiment_Supply_Officer = models.ForeignKey(Personnel, on_delete=models.CASCADE)
-'''
+    RegNum = models.IntegerField()
+    RegimentSupplyNCO = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+    RegimentSupplyOfficer = models.ForeignKey(Personnel, related_name= "personnel", on_delete=models.CASCADE)
+
