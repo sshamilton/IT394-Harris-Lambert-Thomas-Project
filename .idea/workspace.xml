@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -51,7 +59,7 @@
       <updated>1588543752805</updated>
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
-      <workItem from="1588615975097" duration="5848000" />
+      <workItem from="1588615975097" duration="7622000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
@@ -67,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588731130236</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding to models.">
+      <created>1588731812070</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588731812070</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,7 +91,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new files" />
     <MESSAGE value="adding to models. Also Changed names in models.py to remove underscores." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding to models. Also Changed names in models.py to remove underscores." />
+    <MESSAGE value="Adding to models." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding to models." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
@@ -87,10 +103,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588730942305" />
-    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588731129655">
+    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588731811402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588731129655" />
+    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588731811402" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
