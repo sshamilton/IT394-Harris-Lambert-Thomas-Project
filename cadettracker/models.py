@@ -1,16 +1,22 @@
 from django.db import models
 
+
+class Buildings(models.Model):
+    BuildingName = models.CharField(max_length=20)
+
+
 class Location(models.Model):
-    BLDGNum = models.CharField(max_length=4)
+#    BLDGNum = models.CharField(max_length=4)
+    BLDGName = models.ForeignKey(Buildings, on_delete=models.CASCADE)
     Floor = models.IntegerField()
     RoomNum = models.IntegerField()
     RoomDescription = models.CharField(max_length=50)
 
-    #def name(self):
-    #    return (self.Location_ID + "is the location")
+    def name(self):
+        return (self.BLDGName + "is the location")
 
-    #def __str__(self):
-    #    return (self.Location_ID + "is the location")
+    def __str__(self):
+        return (self.BLDGName + "is the location")
 
 class Supply(models.Model):
     item = models.CharField(max_length=50)
