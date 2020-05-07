@@ -2,7 +2,8 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply, CompanyHasPersonnel
+from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply,\
+    Building, CompanyNeedsSupply, CompanyHasPersonnel, RegHasPersonnel
 
 admin.site.register(Company)
 admin.site.register(Location)
@@ -14,3 +15,4 @@ admin.site.register(CompanyNeedsSupply)
 admin.site.register(RegHasSupply)
 admin.site.register(Building)
 admin.site.register(CompanyHasPersonnel)
+admin.site.register(RegHasPersonnel)
