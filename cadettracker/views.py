@@ -16,6 +16,15 @@ def index(request):
     return HttpResponse(template.render(context,
                                         request))
 
+def company(request,CompanyName):
+    items = Supply.objects.order_by('item')
+
+    template = loader.get_template('cadettracker/company.html')
+    context = {
+        'Supply List' : items,
+    }
+    return HttpResponse(template.render(context,
+                                        request))
 
 #List cadets is first view
 '''

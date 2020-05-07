@@ -8,4 +8,5 @@ app_name='cadettracker'
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
+    path('<CompanyName>/', views.company, name='company')
 ]
