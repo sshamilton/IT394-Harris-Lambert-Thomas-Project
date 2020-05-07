@@ -56,7 +56,7 @@ class Regiment(models.Model):
         elif self.RegNum == 3:
             return "3rd REG"
         elif self.RegNum == 4:
-            return "5th REG"
+            return "4th REG"
 
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
@@ -79,6 +79,9 @@ class CompanyHasSupply(models.Model):
     CompanyLabel = models.ForeignKey(Company, on_delete=models.CASCADE) #1,2,3,4
     Location = models.ForeignKey(Location, on_delete=models.CASCADE) #Go Buffs!  Go Greeks, etc.
     #Location_ID = models.ForeignKey(Locations, on_delete=models.CASCADE) #Buffalos, Greeks.
+
+    def __str__(self):
+        return ("You have " + str(self.NumAvailable) + " " + str(self.Item) + "s")
 
 
 class CompanyNeedsSupply(models.Model):

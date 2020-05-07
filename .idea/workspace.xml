@@ -4,8 +4,6 @@
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <updated>1588543752805</updated>
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
-      <workItem from="1588615975097" duration="22849000" />
+      <workItem from="1588615975097" duration="24877000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
@@ -131,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588817062231</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="debugging models.">
+      <created>1588875110298</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588875110298</updated>
+    </task>
+    <task id="LOCAL-00012" summary="debugging models.">
+      <created>1588882540720</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588882540720</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,14 +169,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
-    <state x="195" y="121" key="CommitChangelistDialog2" timestamp="1588875035218">
+    <state x="195" y="121" key="CommitChangelistDialog2" timestamp="1588882540198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="195" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588875035218" />
+    <state x="195" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588882540198" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588729429100" />
+    <state x="1152" y="240" key="MultipleFileMergeDialog" timestamp="1588883504358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1152" y="240" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588883504358" />
     <state x="1032" y="246" key="Vcs.Push.Dialog.v2" timestamp="1588816194511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,9 +189,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559635826" />
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588811217942">
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588883495909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588811217942" />
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588883495909" />
   </component>
 </project>
