@@ -18,22 +18,13 @@ def index(request):
     return HttpResponse(template.render(context,
                                         request))
 
-def company(request,CompanyName):
-    CompanyID = CompanyName
-    url = request.META['PATH_INFO'].split("/")
-    company_letter = url[2]
-    #items = Supply.objects.order_by('item')
-    Supply_List = CompanyHasSupply.objects.order_by('Item')
-    #Supply_List.filter(CompanyName = CompanyHasSupply.CompanyLabel)
-    #Supply_List = Supply_List.order_by('Item')
-    #print(Supply_List)
-    url = request.META['PATH_INFO'].split("/")
-    company_letter = url[2]
+def company(request,company_id):
+    Co = Company.objects.get(pk=company_id)
+    #import pdb
+    #pdb.set_trace()
     template = loader.get_template('cadettracker/company.html')
     context = {
-        'Supply_List' : Supply_List,
-        'url': company_letter,
-        'CompanyName' : CompanyName
+        'Co' : Co,
     }
     return HttpResponse(template.render(context,
                                         request))

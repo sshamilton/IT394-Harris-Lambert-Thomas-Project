@@ -1,10 +1,11 @@
 <h2>Item list</h2>
 
-{% if Supply_List %}
+{{ Co }}
+{% if Co %}
 <ul>
  
   
-{% for item in Supply_List %} 
+{% for item in Co.companyhassupply_set.all %}
   <li>{{ item }} </li>
 
 {% endfor %}
