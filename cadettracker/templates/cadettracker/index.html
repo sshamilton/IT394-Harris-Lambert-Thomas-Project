@@ -12,3 +12,18 @@
 {% else %}
 <p>No Companies in database</p>
 {% endif %}
+
+<h2> Regiment List</h2>
+
+{% if Reg_List %}
+
+<ul>
+
+    {% for REG in Reg_List %}
+    <li><a href="/supply{{ REG.RegNum}}"> {{REG.RegNum}}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p> No Regiments in database</p>
+{% endif %}

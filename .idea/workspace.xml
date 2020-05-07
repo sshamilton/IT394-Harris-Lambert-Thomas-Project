@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588882540720</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="addition to models companyhassupply">
+      <created>1588883760122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588883760122</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +166,8 @@
     <MESSAGE value="Changed Models some to make the flow better. starting on home page view." />
     <MESSAGE value="Added companyhaspersonnel and reghaspersonnel models because you could not create a company without personnel and you couldnt create personnel without a company. Not possible to update without." />
     <MESSAGE value="debugging models." />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging models." />
+    <MESSAGE value="addition to models companyhassupply" />
+    <option name="LAST_COMMIT_MESSAGE" value="addition to models companyhassupply" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
@@ -169,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
-    <state x="195" y="121" key="CommitChangelistDialog2" timestamp="1588882540198">
+    <state x="195" y="121" key="CommitChangelistDialog2" timestamp="1588883759538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="195" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588882540198" />
+    <state x="195" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588883759538" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -189,9 +198,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559635826" />
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588883495909">
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588883847168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588883495909" />
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588883847168" />
   </component>
 </project>
