@@ -1,0 +1,18 @@
+<h2>Item list</h2>
+
+Regiment: {{ regi.RegNum }}
+{% if regi %}
+<ul>
+
+
+{% for item in regi.companyneedssupply_set.all %}
+  <li>{{ item }} </li>
+
+{% endfor %}
+
+
+
+</ul>
+{% else %}
+<p>No suppliessssssss in database</p>
+{% endif %}

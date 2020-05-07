@@ -20,11 +20,21 @@ def index(request):
 
 def company(request,company_id):
     Co = Company.objects.get(pk=company_id)
+    #Reg = Company.objects.get('regiment')
     #import pdb
     #pdb.set_trace()
     template = loader.get_template('cadettracker/company.html')
     context = {
         'Co' : Co,
+    }
+    return HttpResponse(template.render(context,
+                                        request))
+
+def reg(request, reg_id):
+    regi = Regiment.objects.get(pk=reg_id)
+    template = loader.get_template('cadettracker/regiment.html')
+    context = {
+        'regi': regi
     }
     return HttpResponse(template.render(context,
                                         request))
