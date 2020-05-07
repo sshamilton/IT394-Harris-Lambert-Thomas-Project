@@ -56,7 +56,7 @@ class Regiment(models.Model):
         elif self.RegNum == 3:
             return "3rd REG"
         elif self.RegNum == 4:
-            return "5th REG"
+            return "4th REG"
 
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
