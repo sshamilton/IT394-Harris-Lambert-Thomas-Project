@@ -17,11 +17,11 @@ def index(request):
                                         request))
 
 def company(request,CompanyName):
-    items = Supply.objects.order_by('item')
-
+    #items = Supply.objects.order_by('item')
+    supplies = CompanyHasSupply.objects.order_by('CompanyLabel')
     template = loader.get_template('cadettracker/company.html')
     context = {
-        'Supply List' : items,
+        'Supply List' : supplies,
     }
     return HttpResponse(template.render(context,
                                         request))
