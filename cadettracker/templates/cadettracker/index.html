@@ -1,10 +1,11 @@
 <h2>Company List</h2>
 
-{% if Companys %} <!-- check if list is full or empty -->
+{% if Company_list %} <!-- check if list is full or empty -->
 <ul>
 
-  {% for Company in Companys %}
-      <li><a href="./{{Company.Company_id}}">{{Company.CompanyName}}</a> {{Company.CompanyName}}</li>
+  {% for Company in Company_list %}
+      <li><a href="/supply/{{ Company.CompanyName }}">{{Company.CompanyName}}</a>
+          {{Company.CompanyName}}</li>
   {% endfor %}
 
 </ul>

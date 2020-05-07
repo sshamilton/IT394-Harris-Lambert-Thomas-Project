@@ -27,6 +27,10 @@ class Location(models.Model):
 class Supply(models.Model):
     item = models.CharField(max_length=50)
 
+    def __str__(self):
+        return (str(self.item))
+
+
 class Personnel(models.Model):
     xNum = models.CharField(max_length=6)
     jobTitle = models.CharField(max_length=15)
@@ -43,6 +47,16 @@ class Regiment(models.Model):
     RegSupplyLocation = models.ForeignKey(Location, on_delete=models.CASCADE)
     #RegimentSupplyNCO = models.ForeignKey(Personnel, on_delete=models.CASCADE)
     #RegimentSupplyOfficer = models.ForeignKey(Personnel, related_name= "personnel", on_delete=models.CASCADE)
+
+    def __str__(self):
+        if self.RegNum == 1:
+            return "1st REG"
+        elif self.RegNum == 2:
+            return "2nd REG"
+        elif self.RegNum == 3:
+            return "3rd REG"
+        elif self.RegNum == 4:
+            return "5th REG"
 
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
