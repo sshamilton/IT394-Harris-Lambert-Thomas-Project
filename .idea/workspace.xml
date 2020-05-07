@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <updated>1588543752805</updated>
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
-      <workItem from="1588615975097" duration="19748000" />
+      <workItem from="1588615975097" duration="20710000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588815570339</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added companyhaspersonnel and reghaspersonnel models because you could not create a company without personnel and you couldnt create personnel without a company. Not possible to update without.">
+      <created>1588816191466</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588816191466</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,29 +136,30 @@
     <MESSAGE value="Testing admin site changes" />
     <MESSAGE value="Added Buildings Table to make the location organization more understandable" />
     <MESSAGE value="Changed Models some to make the flow better. starting on home page view." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Models some to make the flow better. starting on home page view." />
+    <MESSAGE value="Added companyhaspersonnel and reghaspersonnel models because you could not create a company without personnel and you couldnt create personnel without a company. Not possible to update without." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added companyhaspersonnel and reghaspersonnel models because you could not create a company without personnel and you couldnt create personnel without a company. Not possible to update without." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1031" y="183" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1588549199894" />
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588736389486">
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588816823513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588736389486" />
-    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588815569796">
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
+    <state x="996" y="121" key="CommitChangelistDialog2" timestamp="1588816190971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588815569796" />
+    <state x="996" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588816190971" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588729429100" />
-    <state x="1032" y="246" key="Vcs.Push.Dialog.v2" timestamp="1588731134808">
+    <state x="1032" y="246" key="Vcs.Push.Dialog.v2" timestamp="1588816194511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588731134808" />
+    <state x="1032" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588816194511" />
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1588559635826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

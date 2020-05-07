@@ -36,10 +36,18 @@ class Personnel(models.Model):
     regimentLabel = models.IntegerField()
     company = models.ForeignKey('Company', on_delete=models.CASCADE, blank=True)
 
+
+class Regiment(models.Model):
+    # Cannot put the personnel in here or company we need other relational tables.
+    RegNum = models.IntegerField()
+    RegSupplyLocation = models.ForeignKey(Location, on_delete=models.CASCADE)
+    #RegimentSupplyNCO = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+    #RegimentSupplyOfficer = models.ForeignKey(Personnel, related_name= "personnel", on_delete=models.CASCADE)
+
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
     #SupplyOfficer = models.ForeignKey(Personnel, related_name = "companies", null=True, on_delete=models.CASCADE ) #Alpha, Bravo, Charlie etc.
-    regiment = models.IntegerField() #1,2,3,4
+    regiment = models.ForeignKey(Regiment, on_delete=models.CASCADE) #1,2,3,4
     #SupplyNCO = models.ForeignKey(Personnel, related_name = "Scompanies", null=True, on_delete=models.CASCADE ) #Go Buffs!  Go Greeks, etc.
     LocationID = models.ForeignKey(Location, on_delete=models.CASCADE) #Buffalos, Greeks.
 
@@ -71,12 +79,7 @@ class RegHasSupply(models.Model):
     RegimentID = models.IntegerField()
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
-class Regiment(models.Model):
-    # Cannot put the personnel in here or company we need other relational tables.
-    RegNum = models.IntegerField()
-    RegSupplyLocation = models.ForeignKey(Location, on_delete=models.CASCADE)
-    #RegimentSupplyNCO = models.ForeignKey(Personnel, on_delete=models.CASCADE)
-    #RegimentSupplyOfficer = models.ForeignKey(Personnel, related_name= "personnel", on_delete=models.CASCADE)
+
 
 class RegHasPersonnel(models.Model):
     Reg = models.ForeignKey(Regiment, on_delete=models.CASCADE)

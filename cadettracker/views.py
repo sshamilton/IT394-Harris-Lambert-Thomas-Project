@@ -7,7 +7,7 @@ from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSu
 
 def index(request):
     Company_list = Company.objects.order_by('CompanyName')
-    output = ', '.join([c.LocationID for c in Company_list])
+    output = ', '.join([(str(c.CompanyName) + str(c.LocationID)) for c in Company_list])
     return HttpResponse(output)
 
 
