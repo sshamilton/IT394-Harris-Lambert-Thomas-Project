@@ -20,6 +20,7 @@ def index(request):
 
 def company(request,company_id):
     Co = Company.objects.get(pk=company_id)
+    #Reg = Company.objects.get('regiment')
     #import pdb
     #pdb.set_trace()
     template = loader.get_template('cadettracker/company.html')
