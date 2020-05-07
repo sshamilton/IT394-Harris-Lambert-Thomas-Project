@@ -30,21 +30,25 @@ class Supply(models.Model):
 class Personnel(models.Model):
     xNum = models.CharField(max_length=6)
     jobTitle = models.CharField(max_length=15)
-    roomNum = models.CharField(max_length=4)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
     phoneNum = models.CharField(max_length=10)
-    companyLabel = models.CharField(max_length = 2)
+    #companyLabel = models.CharField(max_length = 2)
     regimentLabel = models.IntegerField()
-    company = models.ForeignKey('Company', on_delete=models.CASCADE, default=1)
+    company = models.ForeignKey('Company', on_delete=models.CASCADE, blank=True)
 
 class Company(models.Model):
     CompanyName = models.CharField(max_length=2) #A, B, C, etc.
-    SupplyOfficer = models.ForeignKey(Personnel, related_name = "companies", blank = True, on_delete=models.CASCADE ) #Alpha, Bravo, Charlie etc.
+    #SupplyOfficer = models.ForeignKey(Personnel, related_name = "companies", null=True, on_delete=models.CASCADE ) #Alpha, Bravo, Charlie etc.
     regiment = models.IntegerField() #1,2,3,4
-    SupplyNCO = models.ForeignKey(Personnel, related_name = "Scompanies", blank=True , on_delete=models.CASCADE ) #Go Buffs!  Go Greeks, etc.
+    #SupplyNCO = models.ForeignKey(Personnel, related_name = "Scompanies", null=True, on_delete=models.CASCADE ) #Go Buffs!  Go Greeks, etc.
     LocationID = models.ForeignKey(Location, on_delete=models.CASCADE) #Buffalos, Greeks.
 
     def __str__(self):
-        return (self.shortname + "-" + str(self.regiment))
+        return (self.CompanyName + "-" + str(self.regiment))
+
+class CompanyHasPersonnel(models.Model):
+    person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+    Co = models.ForeignKey(Company, on_delete=models.CASCADE)
 
 
 class CompanyHasSupply(models.Model):
@@ -55,14 +59,17 @@ class CompanyHasSupply(models.Model):
     #Location_ID = models.ForeignKey(Locations, on_delete=models.CASCADE) #Buffalos, Greeks.
 
 
+class CompanyNeedsSupply(models.Model):
+    Item = models.ForeignKey(Supply, on_delete=models.CASCADE)
+    NumRequested = models.IntegerField()
+    CompanyLabel = models.ForeignKey(Company, on_delete=models.CASCADE)
+    Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
 class RegHasSupply(models.Model):
     item = models.CharField(max_length=15)
     NumberAvailable = models.IntegerField()
     RegimentID = models.IntegerField()
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
-
-
 
 class Regiment(models.Model):
     RegNum = models.IntegerField()

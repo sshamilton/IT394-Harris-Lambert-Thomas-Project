@@ -1,8 +1,15 @@
 from django.shortcuts import render, loader
 from django.http import HttpResponse
-#from .models import Cadet
+from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply
+
 
 # Create your views here.
+
+def index(request):
+    Company_list = Company.objects.order_by('CompanyName')
+    output = ', '.join([c.LocationID for c in Company_list])
+    return HttpResponse(output)
+
 
 #List cadets is first view
 '''
