@@ -84,7 +84,8 @@ class CompanyHasSupply(models.Model):
     #Location_ID = models.ForeignKey(Locations, on_delete=models.CASCADE) #Buffalos, Greeks.
 
     def __str__(self):
-        return ("You have " + str(self.NumAvailable) + " " + str(self.Item) + "s")
+        return ("Company " + str(self.CompanyLabel) + " has " + str(self.NumAvailable) + " " + str(self.Item) + "(s)")
+        #"You have " + str(self.NumAvailable) + " " + str(self.Item) + "s")
 
 
 class CompanyNeedsSupply(models.Model):
