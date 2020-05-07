@@ -80,6 +80,9 @@ class CompanyHasSupply(models.Model):
     Location = models.ForeignKey(Location, on_delete=models.CASCADE) #Go Buffs!  Go Greeks, etc.
     #Location_ID = models.ForeignKey(Locations, on_delete=models.CASCADE) #Buffalos, Greeks.
 
+    def __str__(self):
+        return ("You have " + str(self.NumAvailable) + " " + str(self.Item) + "s")
+
 
 class CompanyNeedsSupply(models.Model):
     Item = models.ForeignKey(Supply, on_delete=models.CASCADE)
