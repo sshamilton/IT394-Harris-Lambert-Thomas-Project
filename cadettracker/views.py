@@ -25,9 +25,11 @@ def company(request,CompanyName):
     #filter(CompanyLabel = CompanyHasSupply.CompanyLabel)
     #Supply_List = Supply_List.order_by('Item')
     #print(Supply_List)
+    url = request.META['PATH_INFO']
     template = loader.get_template('cadettracker/company.html')
     context = {
         'Supply_List' : Supply_List,
+        'url': url,
     }
     return HttpResponse(template.render(context,
                                         request))
