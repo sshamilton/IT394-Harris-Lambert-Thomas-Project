@@ -66,7 +66,7 @@ class Company(models.Model):
     LocationID = models.ForeignKey(Location, on_delete=models.CASCADE) #Buffalos, Greeks.
 
     def __str__(self):
-        return (self.CompanyName + "-" + str(self.regiment))
+        return (self.CompanyName)
 
 class CompanyHasPersonnel(models.Model):
     person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
