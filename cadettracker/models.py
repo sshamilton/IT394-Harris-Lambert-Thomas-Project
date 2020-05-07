@@ -31,14 +31,7 @@ class Supply(models.Model):
         return (str(self.item))
 
 
-class Personnel(models.Model):
-    xNum = models.CharField(max_length=6)
-    jobTitle = models.CharField(max_length=15)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    phoneNum = models.CharField(max_length=10)
-    #companyLabel = models.CharField(max_length = 2)
-    regimentLabel = models.IntegerField()
-    company = models.ForeignKey('Company', on_delete=models.CASCADE, blank=True)
+
 
 
 class Regiment(models.Model):
@@ -68,9 +61,19 @@ class Company(models.Model):
     def __str__(self):
         return (self.CompanyName)
 
-class CompanyHasPersonnel(models.Model):
-    person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
-    Co = models.ForeignKey(Company, on_delete=models.CASCADE)
+
+class Personnel(models.Model):
+    xNum = models.CharField(max_length=6)
+    jobTitle = models.CharField(max_length=15)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    phoneNum = models.CharField(max_length=10)
+    #companyLabel = models.CharField(max_length = 2)
+    regimentLabel = models.ForeignKey(Regiment)
+    company = models.ForeignKey('Company', on_delete=models.CASCADE, blank=True)
+
+# class CompanyHasPersonnel(models.Model):
+#     person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+#     Co = models.ForeignKey(Company, on_delete=models.CASCADE)
 
 
 class CompanyHasSupply(models.Model):

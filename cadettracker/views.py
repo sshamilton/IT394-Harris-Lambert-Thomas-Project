@@ -20,16 +20,19 @@ def index(request):
 
 def company(request,CompanyName):
     CompanyID = CompanyName
+    url = request.META['PATH_INFO'].split("/")
+    company_letter = url[2]
     #items = Supply.objects.order_by('item')
     Supply_List = CompanyHasSupply.objects.order_by('Item')
     #filter(CompanyLabel = CompanyHasSupply.CompanyLabel)
     #Supply_List = Supply_List.order_by('Item')
     #print(Supply_List)
-    url = request.META['PATH_INFO']
+    url = request.META['PATH_INFO'].split("/")
+    company_letter = url[2]
     template = loader.get_template('cadettracker/company.html')
     context = {
         'Supply_List' : Supply_List,
-        'url': url,
+        'url': company_letter,
     }
     return HttpResponse(template.render(context,
                                         request))
