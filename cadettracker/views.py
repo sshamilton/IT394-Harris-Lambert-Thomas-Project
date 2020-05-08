@@ -32,6 +32,8 @@ def company(request,company_id):
 
 def reg(request, reg_id):
     regi = Regiment.objects.get(pk=reg_id)
+    #import pdb
+    #pdb.set_trace()
     template = loader.get_template('cadettracker/regiment.html')
     context = {
         'regi': regi

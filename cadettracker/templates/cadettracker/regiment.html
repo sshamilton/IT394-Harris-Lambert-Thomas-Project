@@ -5,8 +5,11 @@ Regiment: {{ regi.RegNum }}
 <ul>
 
 
-{% for item in regi.companyneedssupply_set.all %}
+{% for item in regi.company_set.all %}
   <li>{{ item }} </li>
+  {% for comp in item.companyneedssupply_set.all %}
+    <li>{{ comp }}</li>
+  {% endfor %}
 
 {% endfor %}
 
