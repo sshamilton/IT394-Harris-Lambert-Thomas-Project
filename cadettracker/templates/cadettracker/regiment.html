@@ -22,11 +22,11 @@ Regiment: {{ regi.RegNum }}
   {% for item in co.companyneedssupply_set.all %}
     <li>{{ item }}</li>
 
-  <form method = 'post'>
+  <form method = 'post' action="{% url 'cadettracker:fulfillRequest' item.id %}">
     {% csrf_token %}
     <div class = 'row'>
-      <a class = "drowpdown-item" href="{% url 'cadettracker:fulFillRequest' item.id %}">Fulfill Request</a>
-    <input type = 'submit' value = 'Submit' />
+      <button type="submit">Fulfill Request</button>
+    <!--<input type = 'submit' value = 'Submit' /> -->
     </div>
 </form>
 

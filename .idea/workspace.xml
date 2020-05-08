@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +69,7 @@
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
       <workItem from="1588615975097" duration="24877000" />
+      <workItem from="1588965183136" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
