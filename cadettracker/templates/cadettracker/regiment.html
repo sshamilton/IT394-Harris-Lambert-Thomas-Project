@@ -1,3 +1,7 @@
+{% extends 'cadettracker/base_generic.html' %}
+
+{% block company_content %}
+
 <h2>Item list</h2>
 
 Regiment: {{ regi.RegNum }}
@@ -36,3 +40,5 @@ Regiment: {{ regi.RegNum }}
 {% else %}
 <p>No suppliessssssss in database</p>
 {% endif %}
+
+{% endblock %}
