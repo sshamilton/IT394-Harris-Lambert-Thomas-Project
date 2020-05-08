@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="Merge branch 'master' of https://github.com/Corey56/IT394-Harris-Lambert-Thomas-Project&#10;&#10;# Conflicts:&#10;#&#9;cadettracker/templates/cadettracker/index.html&#10;#&#9;db.sqlite3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,9 +303,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559635826" />
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588890314311">
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588898085290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588890314311" />
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588898085290" />
   </component>
 </project>

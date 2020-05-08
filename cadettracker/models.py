@@ -94,6 +94,9 @@ class CompanyNeedsSupply(models.Model):
     CompanyLabel = models.ForeignKey(Company, on_delete=models.CASCADE)
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return "This company needs " + str(self.NumRequested) + " " + str(self.Item)
+
 class RegHasSupply(models.Model):
     item = models.CharField(max_length=15)
     NumberAvailable = models.IntegerField()
