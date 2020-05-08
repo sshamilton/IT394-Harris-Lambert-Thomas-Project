@@ -1,22 +1,35 @@
-<h2>Item list</h2>
+<body style="background-color:powderblue;">
+<h2 style = "text-align:center;">Item list for {{ Co.CompanyName }} {{ Co.regiment }}</h2>
 
-{{ Co.CompanyName }} {{ Co.regiment }}
+
+
+<div> </div>
+<div> </div>
+<div> </div>
+<div style = "text-align:center;">
+
 {% if Co %}
-<ul>
+</div>
+<ul style = "text-align:center;">
 
 
 {% for item in Co.companyhassupply_set.all %}
-  <li>{{ item }} </li>
+  <li style = "text-align:center;">{{ item }} </li>
 
-<a class = "drowpdown-item" href="{% url 'cadettracker:modifysupplies' Co.pk %}">Modify supplies</a>
+
 
 {% endfor %}
+<a class = "drowpdown-item" style = "font-size:150%;" href="{% url 'cadettracker:modifysupplies' Co.pk %}">Modify supplies</a>
 
 
+</ul>
 
+<ul style = "text-align:center;">
+<img align="center" src="https://preparednessmama.com/wp-content/uploads/2019/02/mre-boxes.jpg" alt="MRE's" width="400" height="400" >
 </ul>
 {% else %}
 <p>No suppliessssssss in database</p>
 {% endif %}
 
 <p> {{ url }}</p>
+</body>
