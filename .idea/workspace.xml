@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -256,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588898274009</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="problems with reg personnel listing">
+      <created>1588899201391</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588899201391</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +288,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/Corey56/IT394-Harris-Lambert-Thomas-Project&#10;&#10;# Conflicts:&#10;#&#9;cadettracker/templates/cadettracker/index.html&#10;#&#9;db.sqlite3" />
     <MESSAGE value="models string edit" />
     <MESSAGE value="index edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="index edit" />
+    <MESSAGE value="problems with reg personnel listing" />
+    <option name="LAST_COMMIT_MESSAGE" value="problems with reg personnel listing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
@@ -295,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
-    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588898273530">
+    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588899200888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588898273530" />
+    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588899200888" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
