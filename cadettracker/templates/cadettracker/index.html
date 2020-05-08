@@ -1,3 +1,8 @@
+
+{% extends 'cadettracker/base_generic.html' %}
+
+{% block company_content %}
+
 <h2>Company List</h2>
 
 {% if Company_list %} <!-- check if list is full or empty -->
@@ -27,3 +32,5 @@
 {% else %}
 <p> No Regiments in database</p>
 {% endif %}
+
+{% endblock %}
