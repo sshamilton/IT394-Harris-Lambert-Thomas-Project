@@ -1,5 +1,5 @@
 from django.shortcuts import render, loader
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply
 from .forms import modifyForm
 
@@ -41,11 +41,24 @@ def reg(request, reg_id):
     return HttpResponse(template.render(context,
                                         request))
 
-def modifysupplies(request):
+def modifysupplies(request, company_id):
     if request.method == 'POST':
         form = modifyForm(request.POST)
         if form.is_valid():
-            newSupplies = form.save()
+            try:
+                co = CompanyHasSupply.objects.get(CompanyLabel=company_id,
+                                                  Item=form.data['Item'],
+                                                  Location=form.data['Location'])
+            except Exception as e:
+                print(e)
+                form.save()
+            else:
+                co.NumAvailable += int(form.data['NumAvailable'])
+                co.save()
+            #except:
+             #   pass
+            import pdb
+            pdb.set_trace()
             return HttpResponseRedirect('/supply')
     else:
         form = modifyForm()

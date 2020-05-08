@@ -4,4 +4,5 @@ from django import forms
 class modifyForm(forms.ModelForm):
     class Meta:
         model = CompanyHasSupply
-        fields = '__all__'
+        fields = "__all__"
+        #exclude = ['CompanyLabel']
