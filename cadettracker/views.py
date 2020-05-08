@@ -1,7 +1,7 @@
 from django.shortcuts import render, loader
 from django.http import HttpResponse
 from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply
-
+from .forms import modifyForm
 
 # Create your views here.
 
@@ -41,6 +41,15 @@ def reg(request, reg_id):
     return HttpResponse(template.render(context,
                                         request))
 
+def modifysupplies(request):
+    if request.method == 'POST':
+        form = modifyForm(request.POST)
+        if form.is_valid():
+            newSupplies = form.save()
+            return HttpResponseRedirect('/supply')
+    else:
+        form = modifyForm()
+    return render(request, 'cadettracker/modify.html', {'form':form})
 #List cadets is first view
 '''
 def index(request):
