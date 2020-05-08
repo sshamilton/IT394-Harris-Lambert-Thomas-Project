@@ -1,7 +1,7 @@
 from django.shortcuts import render, loader
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply
-from .forms import modifyForm, requestForm
+from .forms import modifyForm, requestForm, other_requestForm
 
 # Create your views here.
 
@@ -54,6 +54,28 @@ def reg(request, reg_id):
                                         ))
 
 
+def requestsupplies(request, company_id):
+    if request.method == 'POST':
+        form = other_requestForm(request.POST)
+        if form.is_valid():
+            try:
+                co = CompanyNeeds.objects.get(CompanyLabel=company_id,
+                                                  Item=form.data['Item'],
+                                                  Location=form.data['Location'])
+            except Exception as e:
+                print(e)
+                form.save()
+            else:
+                co.NumRequested = int(form.data['NumRequested'])
+                co.save()
+            #except:
+             #   pass
+            # import pdb
+            # pdb.set_trace()
+            return HttpResponseRedirect('/supply')
+    else:
+        form = other_requestForm()
+    return render(request, 'cadettracker/delete.html', {'form':form})
 
 
 def modifysupplies(request, company_id):

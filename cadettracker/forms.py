@@ -11,3 +11,9 @@ class requestForm(forms.ModelForm):
     class Meta:
         model = CompanyNeedsSupply
         fields = "__all__"
+
+class other_requestForm(forms.ModelForm):
+    class Meta:
+        model = CompanyNeedsSupply
+        fields = "__all__"
+        #exclude = ['CompanyLabel']
