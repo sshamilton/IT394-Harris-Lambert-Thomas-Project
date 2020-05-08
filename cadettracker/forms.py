@@ -7,4 +7,7 @@ class modifyForm(forms.ModelForm):
         fields = "__all__"
         #exclude = ['CompanyLabel']
 
-
+class requestForm(forms.ModelForm):
+    class Meta:
+        model = CompanyNeedsSupply
+        fields = "__all__"

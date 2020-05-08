@@ -32,8 +32,11 @@ def company(request,company_id):
 
 def fulfillRequest(request, request_id):
     if request.method == "POST":
-        fulfill = CompanyNeedsSupply.objects.get(pk=request_id)
-        fulfill.delete()
+        form = requestForm(request.POST)
+        Request = CompanyNeedsSupply.objects.get(pk=request_id)
+         # = Reg.objects.get()
+        Request.delete()
+        form.save()
         # template = loader.get_template('cadettracker/regiment.html')
         return HttpResponseRedirect('/supply')
         # return render(request, 'cadettracker/delete.html')

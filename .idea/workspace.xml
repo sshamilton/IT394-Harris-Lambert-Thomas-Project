@@ -4,8 +4,6 @@
     <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadettracker/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       <workItem from="1588543758263" duration="2776000" />
       <workItem from="1588559635014" duration="1462000" />
       <workItem from="1588615975097" duration="24877000" />
-      <workItem from="1588965183136" duration="658000" />
+      <workItem from="1588965183136" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1588549231743</created>
@@ -316,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588964917317</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fixing reg template">
+      <created>1588965874413</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1588965874413</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
-    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588964916758">
+    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588965873833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588964916758" />
+    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588965873833" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,9 +387,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559635826" />
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588961301584">
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588966544287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588961301584" />
+    <state x="1249" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588966544287" />
   </component>
 </project>
