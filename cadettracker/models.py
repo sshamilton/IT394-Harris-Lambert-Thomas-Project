@@ -68,7 +68,7 @@ class Personnel(models.Model):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     phoneNum = models.CharField(max_length=10)
     #companyLabel = models.CharField(max_length = 2)
-    regimentLabel = models.ForeignKey(Regiment, on_delete=models.CASCADE)
+    #regimentLabel = models.ForeignKey(Regiment, on_delete=models.CASCADE)
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
 # class CompanyHasPersonnel(models.Model):
