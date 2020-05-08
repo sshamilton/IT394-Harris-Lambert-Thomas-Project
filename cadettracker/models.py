@@ -98,7 +98,7 @@ class CompanyNeedsSupply(models.Model):
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
-        return "This company needs " + str(self.NumRequested) + " " + str(self.Item)
+        return "This company needs " + str(self.NumRequested) + " " + str(self.Item) + "at " + str(self.Location)
 
 class RegHasSupply(models.Model):
     item = models.CharField(max_length=15)
