@@ -1,7 +1,7 @@
 from django.shortcuts import render, loader
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Company, Location, Supply, Personnel, Regiment, CompanyHasSupply, RegHasSupply, Building, CompanyNeedsSupply
-from .forms import modifyForm
+from .forms import modifyForm, requestForm
 
 # Create your views here.
 
@@ -30,12 +30,15 @@ def company(request,company_id):
     return HttpResponse(template.render(context,
                                         request))
 
-def fulfillRequest(request, request_id, reg_id):
+def fulfillRequest(request, reg_id):
     if request.method == "POST":
         form = requestForm(request.POST)
-        Request = CompanyNeedsSupply.objects.get(pk=request_id)
-         # = Reg.objects.get()
-        Request.delete()
+        import pdb
+        pdb.set_trace()
+        regg = Regiment.objects.get(pk=reg_id)
+        co = Company.objects.filter(companyneedssupply=regg)
+        # SRequest = CompanyNeedsSupply.objects.get(CompanyLabel=co)
+        co.delete()
         form.save()
         # template = loader.get_template('cadettracker/regiment.html')
         return HttpResponseRedirect('/supply')
