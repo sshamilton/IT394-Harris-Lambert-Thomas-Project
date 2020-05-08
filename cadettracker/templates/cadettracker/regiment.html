@@ -17,6 +17,7 @@ Regiment: {{ regi.RegNum }}
 
   {% for item in co.companyneedssupply_set.all %}
     <li>{{ item }}</li>
+  <li><a href="{% url 'fulfillRequest' item.id %}"> Fulfill Request</a></li>
   {% endfor %}
 
 {% endfor %}

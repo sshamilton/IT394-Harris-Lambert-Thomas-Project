@@ -41,6 +41,12 @@ def reg(request, reg_id):
     return HttpResponse(template.render(context,
                                         request))
 
+def fulfillRequest(request, supply_request_id):
+    fulfill = CompanyHasSupply.objects.get(pk=supply_request_id)
+    fulfill.delete()
+    return HttpResponseRedirect(reserve('/'))
+
+
 def modifysupplies(request, company_id):
     if request.method == 'POST':
         form = modifyForm(request.POST)
