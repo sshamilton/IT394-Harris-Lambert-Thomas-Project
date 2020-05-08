@@ -21,6 +21,7 @@ Regiment: {{ regi.RegNum }}
 
   {% for item in co.companyneedssupply_set.all %}
     <li>{{ item }}</li>
+  <a class = "drowpdown-item" href="{% url 'cadettracker:fulfillRequest' item.id %}">Fulfill Request</a>
   {% endfor %}
 
 {% endfor %}

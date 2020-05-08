@@ -30,6 +30,12 @@ def company(request,company_id):
     return HttpResponse(template.render(context,
                                         request))
 
+def fulfillRequest(request, request_id):
+    fulfill = CompanyNeedsSupply.objects.get(pk=request_id)
+    fulfill.delete()
+    # template = loader.get_template('cadettracker/regiment.html')
+    return render(request, 'cadettracker/delete.html.html')
+
 def reg(request, reg_id):
     regi = Regiment.objects.get(pk=reg_id)
     #import pdb
@@ -39,7 +45,11 @@ def reg(request, reg_id):
         'regi': regi
     }
     return HttpResponse(template.render(context,
-                                        request))
+                                        request,
+                                        ))
+
+
+
 
 def modifysupplies(request, company_id):
     if request.method == 'POST':
