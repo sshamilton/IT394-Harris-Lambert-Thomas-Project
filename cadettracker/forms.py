@@ -6,3 +6,5 @@ class modifyForm(forms.ModelForm):
         model = CompanyHasSupply
         fields = "__all__"
         #exclude = ['CompanyLabel']
+
+
