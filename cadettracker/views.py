@@ -30,16 +30,13 @@ def company(request,company_id):
     return HttpResponse(template.render(context,
                                         request))
 
-def fulfillRequest(request, reg_id):
+def fulfillRequest(request, item_id):
     if request.method == "POST":
         form = requestForm(request.POST)
-        import pdb
-        pdb.set_trace()
-        regg = Regiment.objects.get(pk=reg_id)
-        co = Company.objects.filter(companyneedssupply=regg)
-        # SRequest = CompanyNeedsSupply.objects.get(CompanyLabel=co)
-        co.delete()
-        form.save()
+        item = CompanyNeedsSupply.objects.get(pk=item_id)
+        # import pdb
+        # pdb.set_trace()
+        item.delete()
         # template = loader.get_template('cadettracker/regiment.html')
         return HttpResponseRedirect('/supply')
         # return render(request, 'cadettracker/delete.html')
