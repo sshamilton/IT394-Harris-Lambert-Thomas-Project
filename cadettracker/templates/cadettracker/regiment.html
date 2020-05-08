@@ -7,6 +7,9 @@ Regiment: {{ regi.RegNum }}
 
 {% for item in regi.company_set.all %}
   <h3>{{ item }} </h3>
+      {% for person in item.personnel_set.all %}
+    <h4> {{ person }}</h4>
+      {% endfor %}
   {% for comp in item.companyneedssupply_set.all %}
     <li>{{ comp }}</li>
   {% endfor %}
