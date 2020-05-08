@@ -34,7 +34,8 @@ def fulfillRequest(request, request_id):
     fulfill = CompanyNeedsSupply.objects.get(pk=request_id)
     fulfill.delete()
     # template = loader.get_template('cadettracker/regiment.html')
-    return render(request, 'cadettracker/delete.html.html')
+    return HttpResponseRedirect('/supply')
+    return render(request, 'cadettracker/delete.html')
 
 def reg(request, reg_id):
     regi = Regiment.objects.get(pk=reg_id)
