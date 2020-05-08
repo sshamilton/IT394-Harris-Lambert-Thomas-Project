@@ -4,7 +4,7 @@
 <ul>
 
   {% for Company in Company_list %}
-      <li><a href="/supply/{{ Company.id }}">{{Company.CompanyName}} {{Company.regiment}}</a>
+      <li><a href="/supply/company/{{ Company.id }}">{{Company.CompanyName}} {{Company.regiment}}</a>
           </li>
   {% endfor %}
 

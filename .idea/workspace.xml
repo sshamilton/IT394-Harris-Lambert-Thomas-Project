@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="Merge branch 'master' of https://github.com/Corey56/IT394-Harris-Lambert-Thomas-Project&#10;&#10;# Conflicts:&#10;#&#9;cadettracker/templates/cadettracker/index.html&#10;#&#9;db.sqlite3">
+    <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588897188939</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="models string edit">
+      <created>1588898233661</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588898233661</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +271,8 @@
     <MESSAGE value="updates to regiment view" />
     <MESSAGE value="updates to regiment view. Should be fully functional" />
     <MESSAGE value="Merge branch 'master' of https://github.com/Corey56/IT394-Harris-Lambert-Thomas-Project&#10;&#10;# Conflicts:&#10;#&#9;cadettracker/templates/cadettracker/index.html&#10;#&#9;db.sqlite3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Corey56/IT394-Harris-Lambert-Thomas-Project&#10;&#10;# Conflicts:&#10;#&#9;cadettracker/templates/cadettracker/index.html&#10;#&#9;db.sqlite3" />
+    <MESSAGE value="models string edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="models string edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="183" key="#Deployment" timestamp="1588549199894">
@@ -279,10 +287,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588816823513" />
-    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588897882784">
+    <state x="358" y="39" key="CommitChangelistDialog2" timestamp="1588898233153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588897882784" />
+    <state x="358" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588898233153" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588729429100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
