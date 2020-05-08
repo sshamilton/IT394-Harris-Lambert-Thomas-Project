@@ -5,18 +5,18 @@ Regiment: {{ regi.RegNum }}
 <ul>
 
 
-{% for item in regi.company_set.all %}
-  <h3>{{ item }} </h3>
+{% for co in regi.company_set.all %}
+  <h3>{{ co }} </h3>
     {% if regi.reghaspersonnel_set %}
-      {% for person in regi.reghaspersonnel_set.all %}
+      {% for person in co.personnel_set.all %}
     <h4> {{ person }}</h4>
         {% endfor %}
     {% else %}
     <p> No personnel in database</p>
     {% endif %}
 
-  {% for comp in item.companyneedssupply_set.all %}
-    <li>{{ comp }}</li>
+  {% for item in co.companyneedssupply_set.all %}
+    <li>{{ item }}</li>
   {% endfor %}
 
 {% endfor %}

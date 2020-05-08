@@ -71,6 +71,9 @@ class Personnel(models.Model):
     #regimentLabel = models.ForeignKey(Regiment, on_delete=models.CASCADE)
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.jobTitle + ": " + self.xNum
+
 # class CompanyHasPersonnel(models.Model):
 #     person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
 #     Co = models.ForeignKey(Company, on_delete=models.CASCADE)
