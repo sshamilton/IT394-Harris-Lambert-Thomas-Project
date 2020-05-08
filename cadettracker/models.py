@@ -103,10 +103,10 @@ class CompanyNeedsSupply(models.Model):
 class RegHasSupply(models.Model):
     item = models.CharField(max_length=15)
     NumberAvailable = models.IntegerField()
-    RegimentID = models.IntegerField()
+    RegimentID = models.ForeignKey(Regiment, on_delete=models.CASCADE)
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
-    def  __str__(self):
+    def __str__(self):
         return "REG " + str(self.RegimentID) + " has " + str(self.NumberAvailable) + str(self.item) + " at " + str(self.Location)
 
 class RegHasPersonnel(models.Model):

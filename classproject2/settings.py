@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cadettracker.apps.CadettrackerConfig',
-    'herokuapp'
 ]
 
 MIDDLEWARE = [

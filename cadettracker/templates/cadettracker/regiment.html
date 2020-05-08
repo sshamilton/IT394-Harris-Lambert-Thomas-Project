@@ -7,7 +7,9 @@
 Regiment: {{ regi.RegNum }}
 {% if regi %}
 <ul>
-
+{% for thing in regi.reghassupply_set.all %}
+  <li>{{ thing }}</li>
+  {% endfor %}
 
 {% for co in regi.company_set.all %}
   <h3>{{ co }} </h3>
