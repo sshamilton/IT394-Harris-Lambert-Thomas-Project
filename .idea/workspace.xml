@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="fixing reg template">
+    <list default="true" id="ecd6f971-6ef6-443a-a8f2-5bbe1a4d514f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/templates/cadettracker/regiment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadettracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadettracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588964251059</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fixing reg template">
+      <created>1588964917317</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1588964917317</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
