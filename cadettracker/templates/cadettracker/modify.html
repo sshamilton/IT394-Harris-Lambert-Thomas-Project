@@ -2,6 +2,8 @@
 
 {% block company_content %}
 
+<body style="background-color:white;">
+<h2 style = "text-align:center;">Item list for {{ Co.CompanyName }} {{ Co.regiment }}</h2>
 <form method = 'post'>
     {% csrf_token %}
     {% for field in form %}
