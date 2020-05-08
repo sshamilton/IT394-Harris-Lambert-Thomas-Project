@@ -30,7 +30,7 @@ def company(request,company_id):
     return HttpResponse(template.render(context,
                                         request))
 
-def fulfillRequest(request, request_id):
+def fulfillRequest(request, request_id, reg_id):
     if request.method == "POST":
         form = requestForm(request.POST)
         Request = CompanyNeedsSupply.objects.get(pk=request_id)
