@@ -11,5 +11,6 @@ urlpatterns = [
     path('company/<company_id>/', views.company, name='company'),
     path('modify/<company_id>/', views.modifysupplies, name='modifysupplies'),
     path('reg/<reg_id>/', views.reg, name='reg'),
+    path('fulfill/<reg_id>/', views.modifysupplies, name='fulfillRequest')
 
 ]
