@@ -112,3 +112,6 @@ class RegHasSupply(models.Model):
 class RegHasPersonnel(models.Model):
     Reg = models.ForeignKey(Regiment, on_delete=models.CASCADE)
     person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.person
