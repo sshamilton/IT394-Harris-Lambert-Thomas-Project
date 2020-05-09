@@ -8,8 +8,6 @@ from .forms import modifyForm, requestForm, other_requestForm
 def index(request):
     Company_list = Company.objects.order_by('CompanyName')
     Reg_List = Regiment.objects.order_by('RegNum')
-    #output = ', '.join([(str(c.CompanyName) + ": " + str(c.regiment) + "  " + str(c.LocationID))
-                       # for c in Company_list])
     template = loader.get_template('cadettracker/index.html')
     context = {
         'Company_list': Company_list,
@@ -37,14 +35,10 @@ def fulfillRequest(request, item_id):
         # import pdb
         # pdb.set_trace()
         item.delete()
-        # template = loader.get_template('cadettracker/regiment.html')
         return HttpResponseRedirect('/supply')
-        # return render(request, 'cadettracker/delete.html')
 
 def reg(request, reg_id):
     regi = Regiment.objects.get(pk=reg_id)
-    import pdb
-    pdb.set_trace()
     template = loader.get_template('cadettracker/regiment.html')
     context = {
         'regi': regi
