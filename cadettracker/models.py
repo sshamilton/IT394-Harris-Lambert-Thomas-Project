@@ -107,8 +107,11 @@ class RegHasSupply(models.Model):
     Location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
-        return "REG " + str(self.RegimentID) + " has " + str(self.NumberAvailable) + str(self.item) + " at " + str(self.Location)
+        return "REG " + str(self.RegimentID) + " has " + str(self.NumberAvailable) + " " + str(self.item) + " at " + str(self.Location)
 
 class RegHasPersonnel(models.Model):
     Reg = models.ForeignKey(Regiment, on_delete=models.CASCADE)
     person = models.ForeignKey(Personnel, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.person
