@@ -88,8 +88,6 @@ def modifysupplies(request, company_id):
                 co.save()
             #except:
              #   pass
-            import pdb
-            pdb.set_trace()
             return HttpResponseRedirect('/supply')
     else:
         form = modifyForm()
